@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <script>
+      // Pre-paint: theme from localStorage['lc-theme'] or prefers-color-scheme; lang/dir from the route.
+      (function () {
+        var d = document.documentElement;
+        var t = null;
+        try { t = localStorage.getItem('lc-theme'); } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          t = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        }
+        d.setAttribute('data-theme', t);
+        if (/^\/ar(\/|$)/.test(location.pathname)) { d.lang = 'ar'; d.dir = 'rtl'; }
+      })();
+    </script>
+    <title>Leap Coder — Engineering Smarter Digital Solutions</title>
+    <meta name="description" content="Leap Coder — software engineering, AI, automation and DevOps from Lebanon. Home of Leap POS, Leap HR, Leap Health and Leap Clinic." />
+    <link rel="icon" type="image/svg+xml" href="/leapcoder-mark.svg" />
+    <link rel="canonical" href="https://leapcoder.co/" />
+    <link rel="alternate" hreflang="en" href="https://leapcoder.co/" />
+    <link rel="alternate" hreflang="ar" href="https://leapcoder.co/ar/" />
+    <link rel="alternate" hreflang="x-default" href="https://leapcoder.co/" />
+    <meta name="theme-color" content="#0D2A42" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Leap Coder" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Leap Coder — Engineering Smarter Digital Solutions" />
+    <meta property="og:description" content="Software engineering, AI, automation and DevOps from Lebanon. Home of Leap POS, Leap HR, Leap Health and Leap Clinic." />
+    <meta property="og:url" content="https://leapcoder.co/" />
+    <meta property="og:image" content="https://leapcoder.co/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Leap Coder — Engineering Smarter Digital Solutions" />
+    <meta name="twitter:description" content="Software engineering, AI, automation and DevOps from Lebanon. Home of Leap POS, Leap HR, Leap Health and Leap Clinic." />
+    <meta name="twitter:image" content="https://leapcoder.co/og-image.png" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Leap Coder","url":"https://leapcoder.co","slogan":"Build. Scale. Support.","foundingDate":"2018","hasMap":"https://maps.app.goo.gl/2paXP2Js2Pjn98LX8","sameAs":["https://www.facebook.com/leapcoder","https://www.instagram.com/leap_coder","https://www.tiktok.com/@leap_coder","https://www.linkedin.com/company/leap-coder"],"foundingLocation":{"@type":"Place","name":"Lebanon"},"email":"info@leapcoder.co","telephone":"+961-78-728-894","contactPoint":{"@type":"ContactPoint","telephone":"+961-78-728-894","email":"info@leapcoder.co","contactType":"sales","availableLanguage":["English","Arabic"]},"address":{"@type":"PostalAddress","addressCountry":"LB"},"brand":[{"@type":"Brand","name":"Leap POS","url":"https://pos.leapcoder.co"},{"@type":"Brand","name":"Leap HR","url":"https://hr.leapcoder.co"},{"@type":"Brand","name":"Leap Health","url":"https://health.leapcoder.co"},{"@type":"Brand","name":"Leap Clinic","url":"https://clinic.leapcoder.co"}]}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@600;700&family=Readex+Pro:wght@500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&display=block"
+    />
+    <script type="module" crossorigin src="/assets/index-DLd6zJIb.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B8cOU7kC.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
